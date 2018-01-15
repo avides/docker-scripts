@@ -1,7 +1,7 @@
 #!/bin/bash
 
 ####
-## Execute "curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-reschedule-sh | bash"
+## Execute "curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-reschedule.sh | bash"
 ####
 
 
