@@ -18,6 +18,6 @@ docker service ls | while IFS= read -r line ; do
 	replicasExpected=$(echo $replicas | awk -F '/' '{print $2}');
 
 	## Print current state
-	echo "$name $replicasExpected"
+	echo "$name=$replicasExpected"
 
 done
