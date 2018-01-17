@@ -1,7 +1,13 @@
 #!/bin/bash
 
 ####
-## Execute "curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-backup.sh | bash"
+## 
+## Stream service-backup to stdout
+## 	curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-backup.sh | bash
+##
+## Stream service backup to file
+##	curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-backup.sh | bash > backup.txt
+##	cat backup.txt
 ####
 
 
