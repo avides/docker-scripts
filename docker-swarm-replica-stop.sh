@@ -5,6 +5,7 @@
 ####
 
 
+## Iterate over each service
 docker service ls | while IFS= read -r line ; do
 
 	## Parse service information
