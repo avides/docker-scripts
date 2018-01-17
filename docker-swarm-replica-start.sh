@@ -5,8 +5,10 @@
 ####
 
 
+## Read from stdin
 input=`cat`
 
+## Iterate over each service-line
 for serviceReplicas in $input
 do
         echo "docker service scale $serviceReplicas"
