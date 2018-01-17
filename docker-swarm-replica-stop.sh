@@ -19,6 +19,6 @@ docker service ls | while IFS= read -r line ; do
 
 	## Stop all replicas
 	echo "docker service scale -d $name=0"
-	docker service scale $name=0
+	docker service scale -d $name=0
 	echo ""
 done
