@@ -1,7 +1,10 @@
 #!/bin/bash
 
 ####
-## Execute "curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-stop.sh | bash"
+##
+## Scales all service-replicas to 0
+## 	curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-stop.sh | bash
+##
 ####
 
 
