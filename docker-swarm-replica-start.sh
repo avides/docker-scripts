@@ -15,6 +15,7 @@
 input=`cat`
 
 if [ -z "$input" ];
+then
 
         echo "no stdin"
 
