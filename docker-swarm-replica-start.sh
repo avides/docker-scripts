@@ -14,7 +14,7 @@
 ## Read from stdin
 input=`cat`
 
-if [ -z "$VAR" ];
+if [ -z "$input" ];
 
         echo "no stdin"
 
@@ -30,5 +30,3 @@ else
         done
 
 fi
-
-
