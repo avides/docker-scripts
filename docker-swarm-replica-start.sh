@@ -11,6 +11,7 @@ input=`cat`
 ## Iterate over each service-line
 for serviceReplicas in $input
 do
+        ## Scale replica
         echo "docker service scale $serviceReplicas"
         docker service scale $serviceReplicas
         echo ""
