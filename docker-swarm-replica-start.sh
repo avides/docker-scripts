@@ -2,8 +2,8 @@
 
 ####
 ##
-## Restore previous replica-size from backup (backup.txt)
-##      curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-start.sh && cat backup.txt | bash docker-swarm-replica-start.sh
+## Restore previous replica-size from backup ("backup.txt" required)
+##      curl -O https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-start.sh && cat backup.txt | bash docker-swarm-replica-start.sh
 ##
 ####
 
