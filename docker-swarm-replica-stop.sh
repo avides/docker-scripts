@@ -11,7 +11,7 @@ docker service ls | while IFS= read -r line ; do
 	## Parse service information
 	name=$(echo $line | awk '{print $2;}' )
 
-	## Ignore first line
+	## Ignore first line (header)
 	if [ "$name" == "NAME" ]; then continue; fi
 
 	## Stop all replicas
