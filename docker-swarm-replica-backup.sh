@@ -1,7 +1,13 @@
 #!/bin/bash
 
 ####
-## Execute "curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-backup.sh | bash"
+## 
+## Stream service-backup to stdout
+## 	curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-backup.sh | bash
+##
+## Stream service backup to file
+##	curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-backup.sh | bash > backup.txt
+##	cat backup.txt
 ####
 
 
@@ -18,6 +24,6 @@ docker service ls | while IFS= read -r line ; do
 	replicasExpected=$(echo $replicas | awk -F '/' '{print $2}');
 
 	## Print current state
-	echo "$name $replicasExpected"
+	echo "$name=$replicasExpected"
 
 done

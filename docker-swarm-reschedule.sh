@@ -1,10 +1,14 @@
 #!/bin/bash
 
 ####
-## Execute "curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-reschedule.sh | bash"
+## 
+##  Reschedules all services where the number of running replicas does not match the number of expected replicas
+## 	curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-reschedule.sh | bash
+##
 ####
 
 
+## Iterate over all services
 docker service ls | while IFS= read -r line ; do
 
 	## Parse service information
