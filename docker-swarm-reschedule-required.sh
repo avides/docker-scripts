@@ -3,7 +3,7 @@
 ####
 ## 
 ##  Reschedules all services where the number of running replicas does not match the number of expected replicas
-## 	curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-reschedule.sh | bash
+## 	curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-reschedule-required.sh | bash
 ##
 ####
 

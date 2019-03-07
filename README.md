@@ -3,17 +3,27 @@ Docker-Scripts
 
 ## Reschedule all services
 ```bash
-curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-reschedule.sh | bash
+curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-reschedule-all.sh | bash
 ```
 
-## Replica-size backup
+## Reschedule required services
 ```bash
-curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-backup.sh | bash > backup.txt
+curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-reschedule-required.sh | bash
 ```
 
 ## Scale all replicas to 0
 ```bash
 curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-stop.sh | bash
+```
+
+## Scale all replicas to 1
+```bash
+curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-scale1.sh | bash
+```
+
+## Replica-size backup
+```bash
+curl -sSL https://raw.githubusercontent.com/avides/docker-scripts/master/docker-swarm-replica-backup.sh | bash > backup.txt
 ```
 
 ## Restore replica-size
